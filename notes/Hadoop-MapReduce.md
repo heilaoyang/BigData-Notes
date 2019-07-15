@@ -380,5 +380,6 @@ job.setNumReduceTasks(WordCountDataUtils.WORD_LIST.size());
 2. [Apache Hadoop 2.9.2 > MapReduce Tutorial](http://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
 3. [MapReduce - Combiners]( https://www.tutorialscampus.com/tutorials/map-reduce/combiners.htm)
 
+4.[自定义MapReduce输入输出对象 序列化实现]https://www.cnblogs.com/jifengblog/p/9277425.html
 
 
