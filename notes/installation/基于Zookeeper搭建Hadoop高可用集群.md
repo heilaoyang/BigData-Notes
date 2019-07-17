@@ -131,7 +131,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_201/
 ```xml
 <configuration>
     <property>
-        <!-- 指定namenode的hdfs协议文件系统的通信地址 -->
+        <!-- 指定namenode的hdfs协议文件系统的通信地址。此处的value其实也可以填写成hdfs-site中的dfs.nameservices属性对应的该集群value值,例子： <value>hdfs://mycluster/<value>  -->
         <name>fs.defaultFS</name>
         <value>hdfs://hadoop001:8020</value>
     </property>
