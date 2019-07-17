@@ -174,17 +174,14 @@ export JAVA_HOME=/usr/java/jdk1.8.0_201/
     </property>
     <property>
         <!-- 集群服务的逻辑名称 -->
-        <!-- 这里只有一个名称，所以只有一个集群服务,如果想要配置多个主namenode分布式管理，则可以在value中添加多个集群名用逗号隔开。 -->
-        <!-- 参考资料:https://blog.csdn.net/wild46cat/article/details/53423472 -->
         <name>dfs.nameservices</name>
         <value>mycluster</value>
     </property>
-     <!--集群的 NameNode ID列表,如果有多个集群的话就要配多个。-->
     <property>
+            <!--集群的 NameNode ID列表-->
         <name>dfs.ha.namenodes.mycluster</name>
         <value>nn1,nn2</value>
     </property>
-   
     <property>
         <!-- nn1的RPC通信地址 -->
         <name>dfs.namenode.rpc-address.mycluster.nn1</name>
