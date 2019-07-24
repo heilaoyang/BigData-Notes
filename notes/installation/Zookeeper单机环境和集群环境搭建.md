@@ -173,7 +173,7 @@ echo "3" > /usr/local/zookeeper-cluster/data/myid
 分别在三台主机上，执行如下命令启动服务：
 
 ```shell
-/usr/app/zookeeper-cluster/zookeeper/bin/zkServer.sh start
+nohup /usr/app/zookeeper-cluster/zookeeper/bin/zkServer.sh start > /tmp/zookeeper 2>&1 &
 ```
 
 ### 2.4 集群验证
