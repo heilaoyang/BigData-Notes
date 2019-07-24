@@ -139,6 +139,8 @@ dataDir=/usr/local/zookeeper-cluster/data/
 dataLogDir=/usr/local/zookeeper-cluster/log/
 clientPort=2181
 
+# 如果是云服务外网的话这个配置死都别忘！！！！把这个配置的注释去掉！！
+# quorumListenOnAllIPs=true
 # server.1 这个1是服务器的标识，可以是任意有效数字，标识这是第几个服务器节点，这个标识要写到dataDir目录下面myid文件里
 # 指名集群间通讯端口和选举端口
 server.1=hadoop001:2287:3387
