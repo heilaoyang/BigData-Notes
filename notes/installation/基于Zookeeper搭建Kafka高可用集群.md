@@ -181,6 +181,8 @@ listeners=PLAINTEXT://hadoop001:9092
 log.dirs=/usr/local/kafka-logs/00
 # Zookeeper连接地址
 zookeeper.connect=hadoop001:2181,hadoop001:2182,hadoop001:2183
+# 如果有外网ip的话想通过外网访问加此配置
+#advertised.listeners=PLAINTEXT://外网ip:9092
 ```
 
 server-2.properties：
@@ -190,6 +192,8 @@ broker.id=1
 listeners=PLAINTEXT://hadoop001:9093
 log.dirs=/usr/local/kafka-logs/01
 zookeeper.connect=hadoop001:2181,hadoop001:2182,hadoop001:2183
+# 如果有外网ip的话想通过外网访问加此配置
+#advertised.listeners=PLAINTEXT://外网ip:9092
 ```
 
 server-3.properties：
@@ -199,6 +203,8 @@ broker.id=2
 listeners=PLAINTEXT://hadoop001:9094
 log.dirs=/usr/local/kafka-logs/02
 zookeeper.connect=hadoop001:2181,hadoop001:2182,hadoop001:2183
+# 如果有外网ip的话想通过外网访问加此配置
+#advertised.listeners=PLAINTEXT://外网ip:9092
 ```
 
 这里需要说明的是`log.dirs`指的是数据日志的存储位置，确切的说，就是分区数据的存储位置，而不是程序运行日志的位置。程序运行日志的位置是通过同一目录下的`log4j.properties`进行配置的。
