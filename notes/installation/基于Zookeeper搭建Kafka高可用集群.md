@@ -224,15 +224,13 @@ bin/kafka-server-start.sh config/server-3.properties
 创建测试主题：
 
 ```shell
-bin/kafka-topics.sh --create --bootstrap-server hadoop001:9092 \
-					--replication-factor 3 \
-					--partitions 1 --topic my-replicated-topic
+sh kafka-topics.sh --create --zookeeper 116.62.44.25:2181/kafka --replication-factor 2 --partitions 3 --topic sixsix
 ```
 
 创建后可以使用以下命令查看创建的主题信息：
 
 ```shell
-bin/kafka-topics.sh --describe --bootstrap-server hadoop001:9092 --topic my-replicated-topic
+bin/kafka-topics.sh --describe --bootstrap-server hadoop001:9092 --topic sixsix
 ```
 
 <div align="center"> <img src="https://github.com/heibaiying/BigData-Notes/blob/master/pictures/kafka-cluster-shell.png"/> </div>
