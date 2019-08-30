@@ -69,7 +69,7 @@ export  PATH=${SPARK_HOME}/bin:$PATH
 # source /etc/profile
 ```
 
-### 3.3 集群配置
+### 3.3 集群配置(参考文件链接必看，有些配置这篇没有：https://blog.csdn.net/qq_42825815/article/details/84071702)
 
 进入`${SPARK_HOME}/conf`目录，拷贝配置样本进行修改：
 
